@@ -1,7 +1,7 @@
 version: '3'
 services:
-  hk-mysql:
-    container_name: identity-mysql
+  my-mysql:
+    container_name: my-mysql
     image: mysql/mysql-server:5.7
     environment:
       MYSQL_DATABASE: identity
@@ -19,4 +19,4 @@ services:
     working_dir: /app
     command: mvn clean spring-boot:run
     depends_on:
-    - identity-mysql
+    - my-mysql

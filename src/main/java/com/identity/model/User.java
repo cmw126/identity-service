@@ -7,6 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 import lombok.Data;
 
@@ -23,10 +24,17 @@ public class User {
 	@Column(name="user_name")
 	private String userName;
 	
+	private String password;
+	
 	private String type;
 	
 	@Column(name="access_level")
-	private String accessLevel;
+	private int accessLevel;
+	
+	private String status;
+	
+	@Transient
+	private String message;
 	
 //	@OneToOne(mappedBy="user")
 //	private UserDetail userDetail;

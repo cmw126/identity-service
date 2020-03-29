@@ -1,16 +1,16 @@
-package com.identity.model;
+package com.identity.dto;
 
 import lombok.Data;
 
 @Data
 public class UserRequest {
 
-	// user response columns
+	// user response attributes
 	private String userName;
+	private String password;
 	private String type;
-	private String accessLevel;
+	private int accessLevel;
 	private String fullName;
 	private String email;
 	private String phone;
-	
 }

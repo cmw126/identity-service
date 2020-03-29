@@ -8,8 +8,14 @@ public interface UserConstants {
 
 	final String RESPONSE_SUCCESS = "OK";
 	final String RESPONSE_FAILED = "Failed";
-	final String ACTIVE_USER = "Active user";
+	final String RESPONSE_INSERTED = "1001";
+	final String RESPONSE_UPDATED = "1002";
+	final String RESPONSE_DELETED = "1003";
+	final String RESPONSE_DUPLICATE = "1004";
 	
+	// user status
+	final String ACTIVE = "Active";
+	final String INACTIVE = "Inactive";	
 	
 	// Generic API Error Type
 	ErrorTypeWithCode API_ERROR_INVALID_REQUEST_BODY = new ErrorTypeWithCode(new ErrorType("Invalid Request Body"), new ErrorCode("200.002"));
